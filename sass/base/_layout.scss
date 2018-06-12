@@ -1,0 +1,41 @@
+// Base Layout Stylesheet
+// This is where your layout will go
+// ========================================
+body {
+
+  @include media($medium) {
+    background-color: yellow;
+  }
+
+  @include media($large) {
+    background-color: blue;
+  }
+
+  @include media($extra-large) {
+    background-color: green;
+  }
+}
+
+.header {
+  @include font-type($primary-font, normal, 700);
+}
+
+.main {
+  padding: $spacer-m;
+
+  &__section {
+    margin: $spacer-lg $reset-0;
+
+    &--index {
+
+    }
+  }
+}
+
+.item-container {
+    margin: $spacer-m $reset-0;
+}
+
+.footer {
+
+}
